@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Requests on Mrinank Verma</title>
+    <link>http://localhost:1313/tags/requests/</link>
+    <description>Recent content in Requests on Mrinank Verma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Mrinank Verma</copyright>
+    <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/requests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efficiently Managing RabbitMQ Queues with Python and Regular Expressions</title>
+      <link>http://localhost:1313/posts/managing-rabbitmq-queues/</link>
+      <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/managing-rabbitmq-queues/</guid>
+      <description>Struggling to manage a large number of RabbitMQ queues? In this blog post, we&amp;rsquo;ll show you how to tackle this challenge head-on using Python and regular expressions. Discover how to set up &lt;code&gt;rabbitmqadmin&lt;/code&gt;, retrieve queues in batches, filter them using regex, and safely delete unnecessary ones. We&amp;rsquo;ll explore the RabbitMQ Management HTTP API and share best practices for exception handling and result storage. By automating queue management, you&amp;rsquo;ll save time and effort in maintaining your messaging infrastructure. Join us as we dive into the world of efficient RabbitMQ queue management and take control of your messaging system!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/managing-rabbitmq-queues/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>
