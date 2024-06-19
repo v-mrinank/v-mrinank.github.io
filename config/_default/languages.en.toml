@@ -12,7 +12,7 @@ dateFormat = "2 January 2006"
 
 [author]
 name = "Mrinank Verma"
-image = "profile.jpeg"
+image = "img/profile.jpeg"
 headline = "Software Architect and Project Manager"
 bio = "Certified OSCP Penetration Tester and DevSecOps Professional | Architect of Large-Scale Distributed Systems & Secure Pipelines | Expertise in Malware Analysis Frameworks, SIEM/EDR, Incident Response, and VAPT"
 links = [

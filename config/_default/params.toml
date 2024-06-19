@@ -17,7 +17,8 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "profile"
+layout = "hero"
+homepageImage = "img/background.svg"
 showRecent = true
 showRecentItems = 5
 showMoreLink = false
