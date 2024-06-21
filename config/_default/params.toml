@@ -98,3 +98,9 @@ cardViewScreenWidth = false
 [buymeacoffee]
 
 [verification]
+
+
+
+[mermaid]
+theme = "dark"
+align = "center"
