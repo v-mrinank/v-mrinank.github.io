@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Mrinank Verma</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {{ $style := resources.Get "css/resume.css" | resources.Minify | resources.Fingerprint "sha512" }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Mrinank Verma</span>
+                {{ $profileImage := resources.Get "img/profile.jpeg" }}
+                {{ $profileImage := $profileImage.Fit "200x200 webp" }}
+                <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ $profileImage.RelPermalink }}" alt="Profile picture" />
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <div class="subheading mb-5">
+                        <p>Updated At: <b>06 July 2024</b></p>
+                    </div>
+                    <h1 class="mb-0">
+                        Mrinank
+                        <span class="text-primary">Verma</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <p>New Delhi, India</p>
+                        <a href="mailto:mrinank.verma@gmail.com">mrinank.verma@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">System Architect and Versatile Leader | Full Stack Development and Cybersecurity.</p>
+                    <p class="lead mb-5">Experienced in full stack development and team leadership, with a strong background in cybersecurity auditing, VAPT, and the development of large-scale distributed security systems. Skilled in both offensive (red teaming) and defensive (blue teaming) strategies, dedicated to enhancing organizational resilience through innovative solutions.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/mrinank-verma/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/v-mrinank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/mrinankverma/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Joint Director - Solution Architect, Full Stack Developer, Security Team Lead</h3>
+                            <div class="subheading mb-3">Confidential</div>
+                            <p>
+                                Lead a 15 people team for Development and Operations of a major large-scale automated malware analysis system with auto-DevOps for multiple deployments per day.
+                                <ul>
+                                    <li>
+                                        Architected and lead the development of a Distributed System for running parallel tasks with deduplication of tasks, 
+                                        10000 different priorities and sliding window using Python, Celery, RabbitMQ, Redis and Postgresql, which handles 150 thousand in a single day.
+                                    </li>
+                                    <li>
+                                        Lead the development, deployment and operations of Abstraction APIs for Databases, and BeeGFS Parallel File System.
+                                        This involves developing python REST APIs that abstract the underlying system, 
+                                        Deployment and Operations of the complete system using automated systems like Ansible Scripts, Shell Scripts and Gitlab Auto-DevOps.
+                                    </li>
+                                    <li>
+                                        Lead the Development of a Multi-Parameter Auto-Complete Search System based on Elasticsearch and a Graph & Co-relation system based on Neo4j Graph Database that uses the underlying task pipeline to retrieve, clean and update data.
+                                    </li>
+                                    <li>
+                                        Developed the infrastructure and models for the Throughput tesing of Dynamic APIs of the Web Interface of the Solution.
+                                        Created the deployment scripts, models for the API calls and analysed the reports for finding and fixing the bottlenecks.
+                                    </li>
+                                    <li>
+                                        Performed multiple VAPTs and reported on the findings with recommendations for fixes.
+                                    </li>
+                                    <li>
+                                        DevOps using Gitlab and Ansible.
+                                    </li>
+                                    <li>
+                                        Automatic Creation and Hardening of Ubuntu Server VMs using ansible and shell scripts.
+                                    </li>
+                                    <li>
+                                        PKI based security enforcement with SSL Certificates, Secure SSH Keys and Rotating Randomized Passwords.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                Lead a 18 people team for Development, Operations and Remote Deployments of a massive distributed EDR and SIEM system with auto-DevOps for multiple deployments per week.
+                                <ul>
+                                    <li>
+                                        Architected and lead the development of the data and operations pipeline that synchronises all logs from th child to the parent node and forwards commands and acknowledge in the hierarchy tree.
+                                    </li>
+                                    <li>
+                                        Architected and lead the development of a VPN system with a custom dashboard to allow remote separated/independent clients to connect to the EDR.
+                                    </li>
+                                    <li>
+                                        Lead the Development of a DevSecOps Pipeline based on Docker that allows for auto-upgrades from a centralized secure registry.
+                                    </li>
+                                    <li>
+                                        Lead the development of various sub-modules of the EDR/SIEM.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                Participated in VAPTs, Incidence Responses and Cyber Security Audits.
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                Part of the team that helps form new projects and groups for research and development projects.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Deputy Director - Cyber Security Team Lead, Cyber Security Analyst</h3>
+                            <div class="subheading mb-3">Confidential</div>
+                            <p>
+                                Lead 150+ VAPTs for online production websites, and reported on vulnrabilities and bugs with recommendations to plug them and improve.
+                            </p>
+                            <p>
+                                Participated in Incidence Responses on 4 occassions for critical infrastructure and performed Analysis and Isolation, and helped in improving the infrastructure.
+                            </p>
+                            <p>
+                                Participated in 10+ Cyber Security Audits against Organizational Policies
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - October 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assistant Director - Visual C++ Developer</h3>
+                            <div class="subheading mb-3">Confidential</div>
+                            <p>Developed, and optimzed desktop applications which used Microsoft SQL Server as the data backend and created files in proprietery format for transfering to-and-fro secure/isolated systems.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2017 - June 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Information Systems Officer - Java Developer, Support Team Lead</h3>
+                            <div class="subheading mb-3">Indian Oil Corporation Limited</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2016 - May 2017</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Proficiencies</h2>
+                    <div class="subheading mb-3">Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Vulnerability Assessment and Penetration Testing (VAPT)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Software Architecture
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Incident Response
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            DevSecOps and CI/CD
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Full Stack Development
+                        </li>
+                    </ul>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <div class="subheading mb-3">Programming Languages</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                        <li class="list-inline-item">
+                            <i>
+                                {{ $ansibleImg := resources.Get "img/ansible.png" }}
+                                {{ $ansibleImg := $ansibleImg.Fit "50x50 webp" }}
+                                <img src="{{ $ansibleImg.RelPermalink }}" alt="Ansible" />
+                            </i>
+                        </li>
+                    </ul>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <div class="subheading mb-3">Tools and Libraries</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            Flask
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            django
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            pandas
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-code"></i></span>
+                            Celery
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-message"></i></span>
+                            RabbitMQ
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-database"></i></span>
+                            MongoDB
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-database"></i></span>
+                            Postgresql
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-database"></i></span>
+                            Redis
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-file"></i></span>
+                            BeeGFS
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-linux"></i></span>
+                            Ubuntu
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-linux"></i></span>
+                            Fedora
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-git"></i></span>
+                            Gitlab
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-git"></i></span>
+                            github
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-vault"></i></span>
+                            Hashicorp Vault
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-cogs"></i></span>
+                            Ansible
+                        </li>
+                    </ul>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Certified Container Security Expert - Practical DevSecOps
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Certified DevSecOps Professional - Practical DevSecOps
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Offensive Security Certified Professional - Penetration Testing with Kali Linux (OSCP - PWK)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Technology Group Award for Automated Malware Analysis System
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Runner Up - National Cyber Exercise (NCX) 2023 (Blue Team)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">DIT University formerly Dehradun Institute of Technology</h3>
+                            <div class="subheading mb-3">Bachelor of Technology - Computer Science and Engineering</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2012 - May 2016</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Kendriya Vidyalaya F.R.I.</h3>
+                            <div class="subheading mb-3">English, Physics, Chemistry, Maths, Computers</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2010 - March 2012</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Seven Oaks School, Dehradun</h3>
+                            <div class="subheading mb-3">Maths, Science, English, Hindi, Computers</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2000 - March 2010</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+        {{/*  <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>  */}}
+        {{ $script := resources.Get "js/resume.js" | resources.Minify | resources.Fingerprint "sha512" }}
+        <script type="text/javascript" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    </body>
+</html>
