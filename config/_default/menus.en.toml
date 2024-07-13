@@ -24,6 +24,27 @@
  pageRef = "resume"
  weight = 20
 
+[[main]]
+ name="Github"
+ title=""
+ pre = "github"
+ url = "https://github.com/v-mrinank/"
+ weight = 30
+
+[[main]]
+ name="Instagram"
+ title=""
+ pre = "instagram"
+ url = "https://www.instagram.com/mrinankverma/"
+ weight = 40
+
+[[main]]
+ name="LinkedIn"
+ title=""
+ pre = "linkedin"
+ url = "https://www.linkedin.com/in/mrinank-verma/"
+ weight = 50
+
 #[[main]]
 #  name = "example sub-menu 1"
 #  parent = "Parent"
